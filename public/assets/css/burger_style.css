@@ -27,7 +27,7 @@ h2 {
 }
 
 h2 {
-  font-size: 20pt;
+  font-size: 1.125em;
 }
 
 ul {
@@ -35,10 +35,19 @@ ul {
   padding: 0;
 }
 
-li {
+.new-burger,
+.eaten {
     padding: 5px;
     margin: 5px 0;
     background: #faebd7;
+}
+
+.eaten {
+  color: lightslategray;
+}
+
+.eat-burger {
+  margin: 0 auto;
 }
   
 label {
