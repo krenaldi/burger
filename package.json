@@ -4,7 +4,7 @@
   "description": "Eat-Da-Burger app utilizing Express, Handlebars, and MySQL",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
