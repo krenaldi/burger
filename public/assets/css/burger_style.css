@@ -17,8 +17,20 @@ body {
   margin: 1em 0;
 }
 
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .cols {
   width: 45%;
+}
+
+@media (max-width: 500px) {
+  .cols {
+    width: 100%;
+  }
 }
 
 h1,
@@ -30,6 +42,10 @@ h2 {
   font-size: 1.125em;
 }
 
+img {
+  margin: 0 auto;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -37,6 +53,7 @@ ul {
 
 .new-burger,
 .eaten {
+    position: relative;
     padding: 5px;
     margin: 5px 0;
     background: #faebd7;
@@ -56,4 +73,34 @@ label {
   
 .form-group {
     margin-bottom: 5px;
+}
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button[type=button], 
+button[type=submit] {
+  font-size: .65em;
+  background-color: #467AB3;
+  border: none;
+  color: white;
+  padding: .75em 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button[type=button] {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+button[type=button]:hover, 
+button[type=submit]:hover,
+button[type=button]:focus, 
+button[type=submit]:focus {
+  background-color: #96C9FF;
 }
